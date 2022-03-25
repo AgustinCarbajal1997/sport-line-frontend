@@ -1,0 +1,231 @@
+.details-container {
+  width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+    "img img"
+    "data data"
+    "desc desc";
+
+  .details-image-container {
+    grid-area: img;
+    max-height: 80vh;
+  }
+
+  .details-data-container {
+    grid-area: data;
+
+    .details-data {
+      width: 97%;
+      margin: 0 auto;
+      padding-top: 20px;
+
+      .detail-item-mark {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      div {
+        div {
+          display: flex;
+          align-items: center;
+
+          .details-item-price {
+            font-size: 2rem;
+          }
+
+          .details-item-price-linethrogh {
+            font-size: 1.3rem;
+          }
+        }
+      }
+
+      .details-size-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 97%;
+        gap: 8px;
+        padding: 10px 0;
+        margin-bottom: 20px;
+
+        .details-size-item-stock {
+          width: 41px;
+          height: 41px;
+          border: 1px solid #cdcdcd;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          background-color: #ffffff;
+
+          h4 {
+            margin: 0;
+            font-weight: 400;
+            color: #353535;
+          }
+        }
+
+        .details-size-item-without-stock {
+          width: 41px;
+          height: 41px;
+          border: 1px solid #cdcdcd;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #e5e5e5;
+
+          h4 {
+            margin: 0;
+            font-weight: 400;
+            color: #353535;
+          }
+        }
+      }
+
+      h5 {
+        font-weight: 500;
+        color: #353535;
+        margin: 0;
+      }
+
+      h2 {
+        font-size: 2rem;
+        color: #353535;
+        margin-top: 0;
+      }
+
+      h3 {
+        color: #353535;
+        font-size: 1.6rem;
+        font-weight: 600;
+      }
+
+      div {
+        width: 100%;
+
+        button {
+          width: 100%;
+          background-color: #353535;
+          color: #ffffff;
+          border: none;
+          padding: 15px;
+          font-family: "Work Sans", sans-serif;
+          cursor: pointer;
+          font-weight: 500;
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  .details-desc-container {
+    grid-area: desc;
+
+    div {
+      width: 95%;
+      margin: 0 auto;
+
+      h3 {
+        font-size: 1.5rem;
+        color: #353535;
+      }
+
+      p {
+        color: #353535;
+        line-height: 25px;
+      }
+    }
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media screen and (min-width: 768px) {
+  .details-container {
+    grid-template-areas:
+      "img data"
+      "desc desc";
+    margin: 0 auto;
+    margin-top: 30px;
+    .details-data-container {
+      grid-area: data;
+
+      .details-data {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 20px;
+
+        .details-size-container {
+          display: flex;
+          flex-wrap: wrap;
+          width: 80%;
+          gap: 8px;
+          padding: 10px;
+          padding-left: 0;
+          margin-bottom: 20px;
+        }
+
+        div {
+          width: unset;
+
+          button {
+            width: unset;
+            background-color: #353535;
+            color: #ffffff;
+            border: none;
+            padding: 15px;
+            font-family: "Work Sans", sans-serif;
+            cursor: pointer;
+            font-weight: 500;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: flex-start;
+          }
+        }
+      }
+    }
+
+    .details-desc-container {
+      grid-area: desc;
+      div {
+        width: 70%;
+        margin: 0 auto;
+      }
+    }
+  }
+}

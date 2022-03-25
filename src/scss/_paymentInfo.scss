@@ -1,0 +1,160 @@
+.payment-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+.payment-form-container {
+  width: 100%;
+}
+
+.payment-information-form {
+  width: 95%;
+  margin: auto;
+}
+
+.payment-form-container h2 {
+  color: #383838;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.payment-information-form div {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.payment-information-form label {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #383838;
+}
+
+.payment-information-form-input {
+  height: 30px;
+  margin-top: 5px;
+  border: 1px solid #dddddd;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  outline: none;
+}
+
+.submit-payment-button {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 99999;
+  margin: 20px auto 0 auto;
+  background-color: #353535;
+  color: #ffffff;
+  border: none;
+  padding: 15px 0;
+  cursor: pointer;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.payment-input-error {
+  border: 1px solid red;
+}
+
+.div-paymentInfo-container {
+    margin-top: 20px;
+  .form-paymentInfo-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 20px auto 0 auto;
+
+    input {
+      height: 30px;
+      margin-top: 5px;
+      border: 1px solid #dddddd;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      font-size: 1rem;
+      outline: none;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* PAYMENT INFORMATION */
+  .payment-container {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  .payment-form-container h2 {
+    text-align: center;
+    color: #353535;
+    font-size: 1.6rem;
+  }
+
+  .payment-information-form {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .payment-information-form div {
+    width: 45%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+
+  .submit-payment-button {
+    position: static;
+    width: 95%;
+    margin: 20px auto;
+    background-color: #353535;
+    color: #ffffff;
+    border: none;
+    padding: 15px 0;
+    cursor: pointer;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .div-paymentInfo-container {
+    .form-paymentInfo-container {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      margin: 20px auto 0 auto;
+
+      input {
+        height: 30px;
+        margin-top: 5px;
+        border: 1px solid #dddddd;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        outline: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* PAYMENT INFORMATION */
+  .payment-container {
+    width: 60%;
+  }
+}

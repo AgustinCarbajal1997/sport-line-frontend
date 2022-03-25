@@ -1,0 +1,23 @@
+.model-container {
+  width: 100%;
+  min-height: 100vh;
+  position: fixed;
+  z-index: 9999999;
+  left: 0;
+  top: 0;
+  background-color: #ffffff;
+  .button-container-modal {
+    width: 90%;
+    margin: auto;
+    .button-modal {
+      width: 100%;
+      background-color: #353535;
+      color: #ffffff;
+      font-size: 1.5rem;
+      font-family: "Work Sans", sans-serif;
+      font-weight: 500;
+      border: none;
+      padding: 10px;
+    }
+  }
+}

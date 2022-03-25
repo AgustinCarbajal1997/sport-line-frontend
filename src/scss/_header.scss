@@ -1,0 +1,220 @@
+.header-container {
+  .header {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-areas:
+      "hamburger logo cart"
+      "search search search";
+    align-items: center;
+    background-color: #000000;
+
+
+
+    .hamburger-container {
+      grid-area: hamburger;
+      position: relative;
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+    }
+
+    .logo-header {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    
+      img {
+        width: 100px;
+        height: auto;
+      }
+    
+      span {
+        display: none;
+        font-size: 2rem;
+        font-weight: 600;
+        color: #ffffff;
+      }
+    }
+
+    .cart-fav-header {
+      grid-area: cart;
+      display: flex;
+      justify-content: center;
+      grid-area: cart;
+      margin-right: 10px;
+
+      a {
+        margin: 0 3px;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+
+    a {
+      text-decoration: none;
+      font-size: 2rem;
+      padding: 20px 0;
+      color: #353535;
+      font-weight: 600;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    .header {
+      grid-template-areas: "logo search cart";
+
+      .hamburger-container {
+        display: none;
+      }
+      .logo-header {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      
+        img {
+          width: 100px;
+          height: auto;
+        }
+      
+        span {
+          display: block;
+          font-size: 2rem;
+          font-weight: 600;
+          color: #ffffff;
+        }
+      }
+      .search-container {
+        grid-area: search;
+        margin: auto;
+      }
+
+      .logo {
+        grid-area: logo;
+      }
+
+      .cart-fav-header {
+        display: flex;
+        justify-content: center;
+        grid-area: cart;
+
+        a {
+          margin: 0 8px;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .search-container {
+      margin-top: 50px;
+      width: 90%;
+      display: grid;
+      grid-template-columns: 90% 10%;
+      margin-bottom: 10px;
+      position: relative;
+      grid-area: search;
+      margin: auto;
+
+      input {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        height: 25px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border: #353535 1px solid;
+        outline: none;
+      }
+
+      input::placeholder {
+        text-align: left;
+        font-size: 1rem;
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+      }
+
+      .search-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #353535;
+        cursor: pointer;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+
+      .search-option {
+        width: 100%;
+        position: absolute;
+        top: 102%;
+        background-color: #ffffff;
+        z-index: 999999;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        box-shadow: -1px 8px 15px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: -1px 8px 15px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -1px 8px 15px 0px rgba(0, 0, 0, 0.75);
+
+        ul {
+          padding: 0;
+          list-style: none;
+
+          a {
+            text-decoration: none;
+
+            li {
+              padding: 10px 20px 10px 20px;
+              padding-bottom: 10px;
+              font-size: 0.9rem;
+              cursor: pointer;
+              color: rgb(41, 41, 41);
+            }
+
+            li:hover {
+              background-color: #f9f9f9;
+            }
+          }
+        }
+      }
+    }
+
+    .nav-bar {
+      flex-direction: row;
+      position: static;
+      height: unset;
+      background-color: #ffffff;
+      border-top: 1px solid #353535;
+      border-bottom: 1px solid #353535;
+      background-color: #353535;
+
+      a {
+        padding: 10px 0;
+        margin: 0 20px;
+        font-size: 1.4rem;
+        color: #ffffff;
+        font-weight: 300;
+      }
+
+      .nav-bar-options:nth-last-child(1) {
+        color: #fc5226;
+        font-weight: 600;
+      }
+    }
+  }
+}

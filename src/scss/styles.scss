@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    background-color: #ffffff;
+}
+
+.main{
+    background-color: rgb(245, 245, 245);
+}
+
+@import "header";
+@import "category";
+@import "details";
+@import "auth";
+@import "signupForm";
+@import "favs";
+@import "cart";
+@import "purchases";
+@import "paymentInfo";
+@import "home";
+@import "modal";
+@import "splash";

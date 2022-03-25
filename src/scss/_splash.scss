@@ -1,0 +1,43 @@
+.splash {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999999999;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .splash-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .pogress-bar{
+            width:100%;
+            height: 2px;
+            background-color: #ffffff;
+            margin-left:0
+        }
+        .percentage{
+            color: #ffffff;
+            font-size: 1.4rem;
+            font-weight: 400;
+        }
+        .logo-splash {
+            width: 300px;
+            height: 300px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
+        
+    }
+
+}
